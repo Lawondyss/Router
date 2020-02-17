@@ -1,6 +1,6 @@
 # Router
 
-PHP library to create REST API.
+Simply PHP library to create REST API.
 
 ## Requirements
 
@@ -63,7 +63,7 @@ All catching segments is in `Request::$params`.
 ```php
 $router->get('/foo/{bar:\d+}[/{baz:[a-z]+}]', function(Request $request, Response $response) {
   $response->contentType = 'application/json';
-  $response->body = Json::encode($request->params);
+  $response->body = json_encode($request->params);
 });
 ```
 

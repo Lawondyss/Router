@@ -1,0 +1,33 @@
+{
+  "name": "lawondyss/router",
+  "description": "Small PHP library for creating app routes. Using only at for your own risk, this is for my educational purposes.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ladislav Vondráček",
+      "email": "lad.von@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "nette/utils": "3.1.*"
+  },
+  "require-dev": {
+    "nette/http": "3.0.*",
+    "tracy/tracy": "2.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lawondyss\\Sandy\\Router\\": "src/"
+    },
+    "files": [
+      "src/exceptions.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
